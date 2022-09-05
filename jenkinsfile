@@ -1,0 +1,21 @@
+pipeline {
+    agent {
+		node {
+			label "built-in"
+		}
+	}
+
+    stages {
+        stage('Hello_master') {
+            steps {
+                echo 'Hello World of master'
+            }
+        }
+		stage('Bye') {
+            steps {
+                echo 'Bye TC'
+				
+            }
+        }
+    }
+}
